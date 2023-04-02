@@ -73,8 +73,6 @@ body {
     transition: all ease-in 400ms;
 }
 
-
-
 // SECTION MENU
 #menu {
     overflow: hidden;
@@ -878,12 +876,17 @@ body {
         }
 
         .plus {
+            padding-bottom: 15px;
             margin: 10px 0 0 0;
             text-decoration: none;
             color: transparent;
             font-size: 80px;
+            -moz-transform: rotate(0deg);
+            -webkit-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
             transform: rotate(0deg);
-            transition: all ease 0ms;
+            transition: all ease 400ms;
         }
 
         .plus:hover {
@@ -895,9 +898,7 @@ body {
             transition: all ease 400ms;
 
         }
-
     }
-
 
     .card-custom:hover {
         display: flex;
@@ -909,7 +910,7 @@ body {
             background: #fff;
         }
 
-        a {
+        .plus {
             color: white;
         }
     }
@@ -1167,6 +1168,13 @@ body {
                 text-decoration: none;
                 color: black;
                 font-weight: bold;
+                transition: all ease-in 200ms;
+            }
+
+            a:hover {
+                color: white;
+                font-weight: bold;
+                transition: all ease-in 200ms;
             }
 
             .adress {

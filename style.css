@@ -685,12 +685,17 @@ body {
   font-weight: 500;
 }
 #galerie .card-custom .plus {
+  padding-bottom: 15px;
   margin: 10px 0 0 0;
   text-decoration: none;
   color: transparent;
   font-size: 80px;
+  -moz-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
   transform: rotate(0deg);
-  transition: all ease 0ms;
+  transition: all ease 400ms;
 }
 #galerie .card-custom .plus:hover {
   -moz-transform: rotate(90deg);
@@ -709,7 +714,7 @@ body {
 #galerie .card-custom:hover h4::after {
   background: #fff;
 }
-#galerie .card-custom:hover a {
+#galerie .card-custom:hover .plus {
   color: white;
 }
 #galerie .bloc {
@@ -908,6 +913,12 @@ body {
   text-decoration: none;
   color: black;
   font-weight: bold;
+  transition: all ease-in 200ms;
+}
+#agence .localisation .localisationCard a:hover {
+  color: white;
+  font-weight: bold;
+  transition: all ease-in 200ms;
 }
 #agence .localisation .localisationCard .adress {
   color: white;
